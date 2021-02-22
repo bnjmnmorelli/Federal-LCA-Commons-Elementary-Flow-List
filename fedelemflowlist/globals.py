@@ -13,6 +13,7 @@ except NameError:
 
 outputpath = modulepath + 'output/'
 inputpath = modulepath + 'input/'
+inputpath_mapping = inputpath + 'mapping input/'
 flowmappingpath = modulepath + 'flowmapping/'
 
 flow_list_fields = {'Flowable': [{'dtype': 'str'}, {'required': True}],
@@ -47,7 +48,7 @@ log.basicConfig(level=log.DEBUG, format='%(levelname)s %(message)s',
                 stream=sys.stdout)
 
 flow_list_specs = {
-    "list_version": "1.0.3",
+    "list_version": "1.0.7",
     "flow_classes": ["Biological", "Chemicals", "Energy", "Geological", "Groups", "Land", "Other", "Water"],
     "primary_context_classes": ["Directionality", "Environmental Media"],
     "secondary_context_classes": ["Vertical Strata", "Land Use", "Human-Dominated", "Terrestrial", "Aquatic Feature",
